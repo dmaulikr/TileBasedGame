@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="500" height="40" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilesetc" tilewidth="32" tileheight="32">
+  <image source="tilesetc.png" width="160" height="160"/>
+ </tileset>
+ <layer name="walls" width="500" height="40">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup name="objects" width="500" height="40">
+  <object name="player" type="player" x="155" y="1105" width="23" height="15"/>
+  <object name="exit" type="exit" x="15879" y="1030" width="85" height="113"/>
+ </objectgroup>
+ <objectgroup name="enemies" width="500" height="40">
+  <object name="Flyer" type="Flyer" x="765" y="758" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="2576" y="687" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="2050" y="756" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="4363" y="633" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="4901" y="783" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="5968" y="667" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="8430" y="665" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="9333" y="464" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="10656" y="516" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="12379" y="809" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="13638" y="807" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="14647" y="815" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="15313" y="853" width="13" height="13"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="13196" y="1073" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="12141" y="1115" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="11472" y="1124" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="10873" y="1098" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="9675" y="1158" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="8604" y="1118" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="6284" y="1111" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="6780" y="1104" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="6423" y="1107" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="5416" y="1121" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="4265" y="1076" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="816" y="1138" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="2268" y="1124" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="3264" y="1120" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="3836" y="1140" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="4536" y="1084" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="14204" y="1104" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="15596" y="1132" width="9" height="9"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="7832" y="1118" width="9" height="9"/>
+  <object name="Flyer" type="Flyer" x="7810" y="824" width="13" height="13"/>
+  <object name="Flyer" type="Flyer" x="6834" y="950" width="13" height="13"/>
+ </objectgroup>
+ <objectgroup name="powerups" width="500" height="40"/>
+</map>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="500" height="40" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileseta" tilewidth="32" tileheight="32">
+  <image source="tileseta.png" width="160" height="160"/>
+ </tileset>
+ <layer name="walls" width="500" height="40">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup name="objects" width="500" height="40">
+  <object name="exit" type="exit" x="15882" y="767" width="80" height="115"/>
+  <object name="player" type="player" x="115" y="1035" width="15" height="18"/>
+ </objectgroup>
+ <objectgroup name="enemies" width="500" height="40">
+  <object name="Crawler" type="Crawler" x="3560" y="1120" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="5026" y="1111" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="5756" y="1079" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="6502" y="1143" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="6452" y="667" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="6894" y="631" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="7000" y="1175" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="7044" y="859" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="8000" y="733" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="8568" y="635" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="8717" y="860" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="9320" y="1140" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="9932" y="1172" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="11060" y="1045" width="32" height="25"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="10149" y="1166" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="11476" y="1151" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="12408" y="1163" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="13278" y="1179" width="32" height="25"/>
+  <object name="Crawler" type="Crawler" x="13722" y="921" width="32" height="25"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="14221" y="860" width="32" height="25"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="14305" y="1183" width="32" height="25"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="14945" y="1145" width="32" height="25"/>
+  <object name="MeanCrawler" type="MeanCrawler" x="15344" y="985" width="32" height="25"/>
+ </objectgroup>
+ <objectgroup name="powerups" width="500" height="40">
+  <object name="DoubleJump" type="DoubleJump" x="14523" y="837"/>
+ </objectgroup>
+</map>
