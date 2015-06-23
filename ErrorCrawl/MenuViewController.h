@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface MainMenuViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@interface MenuViewController : UIViewController
 
 @end

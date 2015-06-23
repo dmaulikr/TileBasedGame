@@ -6,9 +6,16 @@
 //  Copyright (c) 2015 vinny.co. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "MenuViewController.h"
+#import "GameViewController.h"
 
-@implementation MainMenuViewController
+@interface MenuViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+
+@end
+
+@implementation MenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -21,12 +28,12 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  // Start background music
+//   Start background music
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (IBAction)playBottonTapped:(UIButton *)sender {
 
+  [self performSegueWithIdentifier:@"ToGameView" sender:sender];
 }
-
 
 @end

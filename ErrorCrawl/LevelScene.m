@@ -32,7 +32,7 @@
 
 - (id)initWithSize:(CGSize)size level:(NSUInteger)currentLevel {
   if ((self = [super initWithSize:size])) {
-    self.currentLevel = currentLevel;
+    self.currentLevel = 1;
 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"levels" ofType:@"plist"];
 
@@ -45,18 +45,6 @@
     self.gameNode = [SKNode node];
 
     [self addChild:self.gameNode];
-
-//    self.bg = [SKSpriteNode spriteNodeWithImageNamed:@"bground1"];
-//
-//    self.bg.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
-//
-//    self.bg.zPosition = -100;
-//
-//    self.bg.name = @"BACKGROUND";
-//
-//    self.bg.size = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height);
-//
-//    [self.gameNode addChild:self.bg];
 
     [self loadParallaxBackground:levelDict];
 
@@ -80,6 +68,9 @@
     self.player = [[Player alloc] initWithImageNamed:@"Player1"];
 
     self.player.zPosition = 900;
+
+    self.player.color = [SKColor colorWithRed:197.0/255.0 green:102.0/255.0 blue:36.0/255.0 alpha:1.0];
+    self.player.colorBlendFactor = 0.4;
 
     [self.map addChild:self.player];
 
@@ -110,22 +101,14 @@
   for (NSArray *layerArray in backgroundArray) {
 
     CGFloat indexOfLayer = [backgroundArray indexOfObject:layerArray] + 1.0;
-    CGFloat ratio = (4.0 - indexOfLayer) / 8.0;
-    if (indexOfLayer == 4.0) {
+    CGFloat ratio = (1.0 - indexOfLayer) / 2.0;
+    if (indexOfLayer == 1.0) {
       ratio = 0.0;
     }
 
     for (NSString *chunkFilename in layerArray) {
 
       SKSpriteNode *backgroundSprite = [SKSpriteNode spriteNodeWithImageNamed:chunkFilename];
-
-      backgroundSprite.color = [SKColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
-
-      backgroundSprite.colorBlendFactor = 1.0;
-
-      backgroundSprite.color = [SKColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
-
-      backgroundSprite.colorBlendFactor = 1.0;
 
       backgroundSprite.anchorPoint = CGPointMake(0.0, 0.0);
 

@@ -36,35 +36,48 @@
     self.lifeBarImage = [SKSpriteNode spriteNodeWithImageNamed:@"Life_Bar_5_5"];
     self.lifeBarImage.position = CGPointMake(80, size.height - 40);
 
-    self.lifeBarImage.color = [SKColor colorWithRed:152.0/255.0 green:1.0/255.0 blue:1.0/255.0 alpha:1.0];
+    self.lifeBarImage.color = [SKColor colorWithRed:250.0/255.0 green:42.0/255.0 blue:0.0/255.0 alpha:1.0];
     self.lifeBarImage.colorBlendFactor = 0.9;
 
     [self addChild:self.lifeBarImage];
 
-    SKAction *scaleUpAction = [SKAction scaleTo:1.07 duration:0.13];
+    SKAction *scaleUpAction = [SKAction scaleTo:1.1 duration:0.13];
 
     SKAction *scaleDownAction = [SKAction scaleTo:0.98 duration:0.13];
 
-    SKAction *pulse = [SKAction sequence:@[scaleUpAction, scaleDownAction]];
+    SKAction *wait = [SKAction waitForDuration: 0.5];
+
+    SKAction *pulse = [SKAction sequence:@[scaleUpAction, scaleDownAction, wait, scaleUpAction, scaleDownAction]];
 
     [self.lifeBarImage runAction:[SKAction repeatActionForever:pulse]];
 
     self.leftButton = [SKSpriteNode spriteNodeWithImageNamed:@"leftButton"];
     self.leftButton.position = CGPointMake(50, 90);
 
+    self.leftButton.color = [SKColor colorWithRed:62.0/255.0 green:62.0/255.0 blue:62.0/255.0 alpha:1.0];
+    self.leftButton.colorBlendFactor = 0.8;
+
+    self.leftButton.alpha = 1.0;
+
     [self addChild:self.leftButton];
     //5
     self.rightButton = [SKSpriteNode spriteNodeWithImageNamed:@"rightButton"];
     self.rightButton.position = CGPointMake(130, 90);
+
+    self.rightButton.color = [SKColor colorWithRed:62.0/255.0 green:62.0/255.0 blue:62.0/255.0 alpha:1.0];
+    self.rightButton.colorBlendFactor = 0.8;
+
+    self.rightButton.alpha = 1.0;
+
     [self addChild:self.rightButton];
     //6
     self.jumpButton = [SKSpriteNode spriteNodeWithImageNamed:@"jumpButton"];
     self.jumpButton.position = CGPointMake(size.width - 70, 60);
 
     self.jumpButton.color = [SKColor colorWithRed:62.0/255.0 green:62.0/255.0 blue:62.0/255.0 alpha:1.0];
-    self.jumpButton.colorBlendFactor = 0.7;
+    self.jumpButton.colorBlendFactor = 0.9;
 
-    self.jumpButton.alpha = 0.9;
+    self.jumpButton.alpha = 1.0;
 
     [self addChild:self.jumpButton];
     //7

@@ -7,38 +7,17 @@
 		<key>level</key>
 		<string>level1.tmx</string>
 		<key>wallSlide</key>
-		<true/>
+		<false/>
 		<key>doubleJump</key>
 		<true/>
 		<key>music</key>
 		<string>lvl1.mp3</string>
+		<key>newbackground</key>
+		<string>bground1</string>
 		<key>background</key>
 		<array>
 			<array>
-				<string>city1-1</string>
-				<string>city1-2</string>
-				<string>city1-3</string>
-				<string>city1-4</string>
-				<string>city1-5</string>
-				<string>city1-6</string>
-			</array>
-			<array>
-				<string>city2-1</string>
-				<string>city2-2</string>
-				<string>city2-3</string>
-				<string>city2-4</string>
-				<string>city2-5</string>
-				<string>city2-6</string>
-			</array>
-			<array>
-				<string>city3-1</string>
-				<string>city3-2</string>
-				<string>city3-3</string>
-				<string>city3-4</string>
-			</array>
-			<array>
-				<string>cave4-1</string>
-				<string>cave4-2</string>
+				<string>bg1</string>
 			</array>
 		</array>
 	</dict>
