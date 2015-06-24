@@ -20,9 +20,11 @@
 }
 
 - (void)setFlipX:(BOOL)flipX {
+
   if (flipX) {
-    //1
+
     self.xScale = -fabs(self.xScale);
+
   } else {
 
     self.xScale = fabs(self.xScale);
@@ -36,6 +38,7 @@
   if (!self.flipX) {
 
     [super setSize:size];
+
   } else {
     
     [super setSize:CGSizeMake(-size.width, size.height)];

@@ -7,7 +7,13 @@
 //
 
 #import "Character.h"
+#import "Player.h"
+#import "JSTileMap+TileLocations.h"
 
 @interface Enemy : Character
+
+@property (nonatomic, weak) Player *player;
+
+- (void)removeSelf;
 
 @end

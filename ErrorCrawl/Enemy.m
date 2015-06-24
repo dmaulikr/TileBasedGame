@@ -10,4 +10,30 @@
 
 @implementation Enemy
 
+- (id)initWithImageNamed:(NSString *)name {
+
+  if (self = [super initWithImageNamed:name]) {
+
+    self.life = 100;
+  }
+
+  return self;
+}
+
+- (void)tookHit:(Character *)character {
+
+  self.life = self.life - 100;
+
+  if (self.life <= 0) {
+
+    [self changeState:kStateDead];
+  }
+}
+
+- (void)removeSelf {
+  
+  self.isActive = NO;
+}
+
+
 @end

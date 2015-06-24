@@ -10,6 +10,7 @@
 		962C7C151B3832950052144C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962C7C141B3832950052144C /* QuartzCore.framework */; };
 		962C7C171B3A110D0052144C /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 962C7C161B3A110D0052144C /* bg1.png */; };
 		962C7C1A1B3A23060052144C /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C7C191B3A23060052144C /* Enemy.m */; };
+		962C7C1D1B3A23B90052144C /* Crawler.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C7C1C1B3A23B90052144C /* Crawler.m */; };
 		96945BD51B376FC70083A777 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96945BD41B376FC70083A777 /* main.m */; };
 		96945BD81B376FC70083A777 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96945BD71B376FC70083A777 /* AppDelegate.m */; };
 		96945BDB1B376FC70083A777 /* LevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96945BDA1B376FC70083A777 /* LevelScene.m */; };
@@ -133,6 +134,8 @@
 		962C7C161B3A110D0052144C /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		962C7C181B3A23060052144C /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		962C7C191B3A23060052144C /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		962C7C1B1B3A23B90052144C /* Crawler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crawler.h; sourceTree = "<group>"; };
+		962C7C1C1B3A23B90052144C /* Crawler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crawler.m; sourceTree = "<group>"; };
 		96945BCF1B376FC70083A777 /* ErrorCrawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErrorCrawl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96945BD31B376FC70083A777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ErrorCrawl/Info.plist; sourceTree = SOURCE_ROOT; };
 		96945BD41B376FC70083A777 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 				96945C221B377BB60083A777 /* Player.m */,
 				962C7C181B3A23060052144C /* Enemy.h */,
 				962C7C191B3A23060052144C /* Enemy.m */,
+				962C7C1B1B3A23B90052144C /* Crawler.h */,
+				962C7C1C1B3A23B90052144C /* Crawler.m */,
 				96945CF81B378C790083A777 /* HUDNode.h */,
 				96945CF91B378C790083A777 /* HUDNode.m */,
 				96945CFB1B3791900083A777 /* SharedTextureCache.h */,
@@ -699,6 +704,7 @@
 				96945C441B3781260083A777 /* SKEmitterNode+SKTExtras.m in Sources */,
 				96945CFA1B378C790083A777 /* HUDNode.m in Sources */,
 				96945BE01B376FC70083A777 /* GameViewController.m in Sources */,
+				962C7C1D1B3A23B90052144C /* Crawler.m in Sources */,
 				96945C501B3782050083A777 /* LFCGzipUtility.m in Sources */,
 				96945C421B3781260083A777 /* SKAction+SKTExtras.m in Sources */,
 				96945C461B3781260083A777 /* SKNode+SKTExtras.m in Sources */,

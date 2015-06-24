@@ -13,4 +13,6 @@
 
 @property (nonatomic, weak) HUDNode *hud;
 
+- (void)bounce;
+
 @end

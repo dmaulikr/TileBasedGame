@@ -41,7 +41,7 @@
 
     [self addChild:self.lifeBarImage];
 
-    SKAction *scaleUpAction = [SKAction scaleTo:1.1 duration:0.13];
+    SKAction *scaleUpAction = [SKAction scaleTo:1.2 duration:0.13];
 
     SKAction *scaleDownAction = [SKAction scaleTo:0.98 duration:0.13];
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="500" height="40" tilewidth="32" tileheight="32" nextobjectid="27">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="500" height="40" tilewidth="32" tileheight="32" nextobjectid="38">
  <tileset firstgid="1" name="tileseta" tilewidth="32" tileheight="32">
   <image source="tileseta.png" width="160" height="160"/>
  </tileset>
@@ -13,7 +13,7 @@
   <object id="2" name="player" type="player" x="115" y="1035" width="15" height="18"/>
  </objectgroup>
  <objectgroup name="enemies">
-  <object id="3" name="Crawler" type="Crawler" x="3560" y="1120" width="32" height="25"/>
+  <object id="3" name="Crawler" type="Crawler" x="504.738" y="1150.72" width="32" height="25"/>
   <object id="4" name="Crawler" type="Crawler" x="5026" y="1111" width="32" height="25"/>
   <object id="5" name="Crawler" type="Crawler" x="5756" y="1079" width="32" height="25"/>
   <object id="6" name="Crawler" type="Crawler" x="6502" y="1143" width="32" height="25"/>
@@ -27,15 +27,26 @@
   <object id="14" name="Crawler" type="Crawler" x="9320" y="1140" width="32" height="25"/>
   <object id="15" name="Crawler" type="Crawler" x="9932" y="1172" width="32" height="25"/>
   <object id="16" name="Crawler" type="Crawler" x="11060" y="1045" width="32" height="25"/>
-  <object id="17" name="MeanCrawler" type="MeanCrawler" x="10149" y="1166" width="32" height="25"/>
+  <object id="17" name="Crawler" type="Crawler" x="10149" y="1166" width="32" height="25"/>
   <object id="18" name="Crawler" type="Crawler" x="11476" y="1151" width="32" height="25"/>
   <object id="19" name="Crawler" type="Crawler" x="12408" y="1163" width="32" height="25"/>
   <object id="20" name="Crawler" type="Crawler" x="13278" y="1179" width="32" height="25"/>
   <object id="21" name="Crawler" type="Crawler" x="13722" y="921" width="32" height="25"/>
-  <object id="22" name="MeanCrawler" type="MeanCrawler" x="14221" y="860" width="32" height="25"/>
-  <object id="23" name="MeanCrawler" type="MeanCrawler" x="14305" y="1183" width="32" height="25"/>
-  <object id="24" name="MeanCrawler" type="MeanCrawler" x="14945" y="1145" width="32" height="25"/>
-  <object id="25" name="MeanCrawler" type="MeanCrawler" x="15344" y="985" width="32" height="25"/>
+  <object id="22" name="Crawler" type="Crawler" x="14221" y="860" width="32" height="25"/>
+  <object id="23" name="Crawler" type="Crawler" x="14305" y="1183" width="32" height="25"/>
+  <object id="24" name="Crawler" type="Crawler" x="14945" y="1145" width="32" height="25"/>
+  <object id="25" name="Crawler" type="Crawler" x="15344" y="985" width="32" height="25"/>
+  <object id="27" name="Crawler" type="Crawler" x="1473.16" y="1132.19" width="32" height="25"/>
+  <object id="28" name="Crawler" type="Crawler" x="4468.41" y="983.846" width="32" height="25"/>
+  <object id="29" name="Crawler" type="Crawler" x="2643.59" y="984.637" width="32" height="25"/>
+  <object id="30" name="Crawler" type="Crawler" x="3603.67" y="984.637" width="32" height="25"/>
+  <object id="31" name="Crawler" type="Crawler" x="5581.1" y="1075.59" width="32" height="25"/>
+  <object id="32" name="Crawler" type="Crawler" x="6366.01" y="1144.65" width="32" height="25"/>
+  <object id="33" name="Crawler" type="Crawler" x="8006.57" y="1180.02" width="32" height="25"/>
+  <object id="34" name="Crawler" type="Crawler" x="8796.53" y="1148.02" width="32" height="25"/>
+  <object id="35" name="Crawler" type="Crawler" x="8461.35" y="1176.65" width="32" height="25"/>
+  <object id="36" name="Crawler" type="Crawler" x="6990.91" y="627.554" width="32" height="25"/>
+  <object id="37" name="Crawler" type="Crawler" x="2013.64" y="956.003" width="32" height="25"/>
  </objectgroup>
  <objectgroup name="powerups">
   <object id="26" name="DoubleJump" type="DoubleJump" x="14523" y="837"/>

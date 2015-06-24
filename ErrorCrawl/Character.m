@@ -25,4 +25,9 @@
   //override this method
 }
 
+- (void)tookHit:(Character *)character {
+
+  NSLog(@"Took hit %@, %@", character, self);
+}
+
 @end
