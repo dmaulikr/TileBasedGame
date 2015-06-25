@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1B3FF0B4-0CF1-4F12-AF2F-F0DA7D620EAB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ErrorCrawl</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4FFA17934DAA6571ABBB03FA5913950879205F55</key>
 		<string>https://github.com/vineetTiwari/TileBasedGame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ErrorCrawl.xcodeproj/project.xcworkspace</string>
+	<string>ErrorCrawl.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4FFA17934DAA6571ABBB03FA5913950879205F55</key>
