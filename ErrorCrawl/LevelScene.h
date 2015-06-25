@@ -8,7 +8,15 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+@protocol SceneDelegate <NSObject>
+
+- (void)dismissScene;
+
+@end
+
 @interface LevelScene : SKScene
+
+@property (nonatomic, weak) id <SceneDelegate> sceneDelegate;
 
 - (id)initWithSize:(CGSize)size level:(NSUInteger)currentLevel;
 

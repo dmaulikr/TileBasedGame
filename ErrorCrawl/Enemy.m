@@ -15,9 +15,11 @@
   if (self = [super initWithImageNamed:name]) {
 
     self.life = 100;
+
   }
 
   return self;
+
 }
 
 - (void)tookHit:(Character *)character {
@@ -27,12 +29,14 @@
   if (self.life <= 0) {
 
     [self changeState:kStateDead];
+
   }
 }
 
 - (void)removeSelf {
   
   self.isActive = NO;
+  
 }
 
 

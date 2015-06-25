@@ -17,7 +17,9 @@
 - (CGRect)collisionBoundingBox {
 
   CGPoint diff = CGPointSubtract(self.desiredPosition, self.position);
+
   return CGRectOffset(self.frame, diff.x, diff.y);
+
 }
 
 - (void)changeState:(CharacterState)newState {
@@ -28,6 +30,7 @@
 - (void)tookHit:(Character *)character {
 
   NSLog(@"Took hit %@, %@", character, self);
+  
 }
 
 @end

@@ -2,52 +2,49 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+        <view contentMode="scaleToFill" id="VcN-Cr-gaE">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 vinny.co. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oca-QZ-fuN">
-                    <rect key="frame" x="90" y="49" width="300" height="300"/>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-y7-78i">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introImage" translatesAutoresizingMaskIntoConstraints="NO" id="5p7-DH-9Ht">
+                    <rect key="frame" x="164" y="130" width="300" height="300"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="300" id="66i-VN-IFr"/>
-                        <constraint firstAttribute="height" constant="300" id="m65-gE-Hhu"/>
+                        <constraint firstAttribute="height" constant="300" id="BaY-dx-AiS">
+                            <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="300" id="o9j-c1-TNY">
+                            <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                        </constraint>
                     </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ErrorCrawl" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="180" y="311.5" width="120" height="35.5"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.62745098040000002" green="0.7725490196" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="169.25" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerY" secondItem="Oca-QZ-fuN" secondAttribute="centerY" constant="41" id="NDL-dr-TKQ"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="180" id="fvb-Df-36g"/>
-                <constraint firstAttribute="centerX" secondItem="Oca-QZ-fuN" secondAttribute="centerX" id="xrD-iI-OFw"/>
+                <constraint firstItem="pWX-y7-78i" firstAttribute="top" secondItem="VcN-Cr-gaE" secondAttribute="top" id="0Hh-uI-mEc"/>
+                <constraint firstAttribute="centerX" secondItem="5p7-DH-9Ht" secondAttribute="centerX" constant="-14" id="6ts-55-Sbe">
+                    <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="pWX-y7-78i" secondAttribute="trailing" id="Izf-ri-8GM"/>
+                <constraint firstItem="pWX-y7-78i" firstAttribute="leading" secondItem="VcN-Cr-gaE" secondAttribute="leading" id="Knc-PR-jcg"/>
+                <constraint firstAttribute="trailing" secondItem="pWX-y7-78i" secondAttribute="trailing" id="RLW-0u-ena"/>
+                <constraint firstAttribute="centerY" secondItem="5p7-DH-9Ht" secondAttribute="centerY" constant="20" id="TbH-oG-o29">
+                    <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="pWX-y7-78i" secondAttribute="bottom" id="adW-sh-fKu"/>
+                <constraint firstItem="pWX-y7-78i" firstAttribute="top" secondItem="VcN-Cr-gaE" secondAttribute="top" id="dUh-vF-Akl"/>
+                <constraint firstItem="pWX-y7-78i" firstAttribute="leading" secondItem="VcN-Cr-gaE" secondAttribute="leading" id="pCa-Cz-ZRW"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
+        <image name="bg1.png" width="1026" height="840"/>
         <image name="introImage" width="1038" height="1244"/>
     </resources>
 </document>

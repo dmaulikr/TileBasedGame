@@ -9,8 +9,10 @@
 
 @interface ParallaxNode : SKNode
 
-@property (nonatomic, strong) SKNode *rootNode;
+@property (nonatomic) SKNode *rootNode;
+
 - (void)update;
+
 - (void)addChild:(SKNode*)child z:(CGFloat)zOrder parallaxRatio:(CGPoint)ratio positionOffset:(CGPoint)offset;
 
 @end

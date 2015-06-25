@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ok9-gB-6e1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3r2-Rv-Z1a">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -17,22 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introImage" translatesAutoresizingMaskIntoConstraints="NO" id="BS2-rB-0Is">
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rWl-ro-j0k">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introImage" translatesAutoresizingMaskIntoConstraints="NO" id="BS2-rB-0Is">
                                 <rect key="frame" x="164" y="130" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="OIW-QZ-yob"/>
-                                    <constraint firstAttribute="width" constant="300" id="Yxu-2O-nQC"/>
+                                    <constraint firstAttribute="height" constant="300" id="OIW-QZ-yob">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="Yxu-2O-nQC">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeQ-IC-vCu">
-                                <rect key="frame" x="240" y="388" width="120" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="240" y="400" width="120" height="48"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.35686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MEx-lX-5bu"/>
                                     <constraint firstAttribute="width" constant="120" id="dbu-Db-Cem"/>
+                                    <constraint firstAttribute="height" constant="36" id="mq1-Qp-J1o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="PLAY">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -40,28 +48,68 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MEx-lX-5bu"/>
+                                        <exclude reference="mq1-Qp-J1o"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="MEx-lX-5bu"/>
+                                        <exclude reference="dbu-Db-Cem"/>
+                                        <include reference="mq1-Qp-J1o"/>
+                                    </mask>
+                                </variation>
                                 <connections>
-                                    <action selector="playBottonTapped:" destination="Ok9-gB-6e1" eventType="touchUpInside" id="nkp-Sp-yzF"/>
-                                    <segue destination="adA-kH-XWS" kind="show" identifier="ToGameView" id="uIg-qK-7sc"/>
+                                    <segue destination="adA-kH-XWS" kind="show" identifier="toGameView" id="LLD-FQ-aXH"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.62745098039215685" green="0.77254901960784317" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="BS2-rB-0Is" secondAttribute="centerY" constant="20" id="2Tc-TZ-Fud"/>
-                            <constraint firstAttribute="centerX" secondItem="BS2-rB-0Is" secondAttribute="centerX" constant="-14" id="Fs6-S7-CIH"/>
-                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="top" secondItem="BS2-rB-0Is" secondAttribute="bottom" constant="-42" id="bsY-tS-nde"/>
-                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="centerX" secondItem="BS2-rB-0Is" secondAttribute="centerX" constant="-14" id="pNk-ni-c5X"/>
+                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="centerX" secondItem="BS2-rB-0Is" secondAttribute="centerX" id="0SI-9J-Liq"/>
+                            <constraint firstAttribute="centerY" secondItem="BS2-rB-0Is" secondAttribute="centerY" constant="20" id="2Tc-TZ-Fud">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="rWl-ro-j0k" firstAttribute="leading" secondItem="Vyz-p1-Wvp" secondAttribute="leading" id="8wn-UL-3Ri"/>
+                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="top" secondItem="BS2-rB-0Is" secondAttribute="bottom" constant="-15" id="A6E-8Z-oO8"/>
+                            <constraint firstAttribute="centerX" secondItem="BS2-rB-0Is" secondAttribute="centerX" constant="-14" id="Fs6-S7-CIH">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="blo-hP-fuG" firstAttribute="top" secondItem="rWl-ro-j0k" secondAttribute="bottom" id="L4U-Y2-8mU"/>
+                            <constraint firstItem="rWl-ro-j0k" firstAttribute="top" secondItem="Vyz-p1-Wvp" secondAttribute="top" id="T4r-Ui-Btk"/>
+                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="top" secondItem="BS2-rB-0Is" secondAttribute="bottom" constant="-30" id="bsY-tS-nde">
+                                <variation key="heightClass=compact-widthClass=regular" constant="2"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="rWl-ro-j0k" secondAttribute="trailing" id="fzv-QE-fXl"/>
+                            <constraint firstItem="MeQ-IC-vCu" firstAttribute="centerX" secondItem="BS2-rB-0Is" secondAttribute="centerX" constant="-14" id="pNk-ni-c5X">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0SI-9J-Liq"/>
+                                <exclude reference="A6E-8Z-oO8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="0SI-9J-Liq"/>
+                                <include reference="A6E-8Z-oO8"/>
+                                <exclude reference="bsY-tS-nde"/>
+                                <exclude reference="pNk-ni-c5X"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="nBB-Kb-FbI"/>
-                    <connections>
-                        <outlet property="playButton" destination="MeQ-IC-vCu" id="oLl-Gr-EYE"/>
-                    </connections>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLH-rD-tER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-89" y="465"/>
+            <point key="canvasLocation" x="723" y="465"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="JEi-4R-3Ne">
@@ -76,13 +124,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wny-Pd-c4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="465"/>
+            <point key="canvasLocation" x="1464" y="465"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zcG-QN-fNo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3r2-Rv-Z1a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YOL-xr-5nE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ok9-gB-6e1" kind="relationship" relationship="rootViewController" id="o3u-J5-gab"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIi-ga-QEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89" y="465"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bg1.png" width="1026" height="840"/>
         <image name="introImage" width="1038" height="1244"/>
     </resources>
 </document>

@@ -11,29 +11,38 @@
 
 @interface MenuViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
-
 @end
 
 @implementation MenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
   if (self) {
     // Custom initialization
+
   }
+
   return self;
+
 }
 
 - (void)viewDidLoad {
+
   [super viewDidLoad];
 
-//   Start background music
 }
 
-- (IBAction)playBottonTapped:(UIButton *)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
-  [self performSegueWithIdentifier:@"ToGameView" sender:sender];
+  if ([segue.identifier isEqualToString:@"toGameView"]) {
+
+    GameViewController *gvc = [[GameViewController alloc] init];
+
+    gvc = segue.destinationViewController;
+
+  }
 }
 
 @end

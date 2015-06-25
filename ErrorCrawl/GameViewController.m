@@ -9,72 +9,108 @@
 #import "GameViewController.h"
 #import "LevelScene.h"
 
-@implementation SKScene (Unarchive)
+@interface GameViewController () <SceneDelegate>
 
-+ (instancetype)unarchiveFromFile:(NSString *)file {
-    /* Retrieve scene file path from the application bundle */
-    NSString *nodePath = [[NSBundle mainBundle] pathForResource:file ofType:@"sks"];
-    /* Unarchive the file to an SKScene object */
-    NSData *data = [NSData dataWithContentsOfFile:nodePath
-                                          options:NSDataReadingMappedIfSafe
-                                            error:nil];
-    NSKeyedUnarchiver *arch = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-    [arch setClass:self forClassName:@"SKScene"];
-    SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
-    [arch finishDecoding];
-    
-    return scene;
-}
+@property (nonatomic) NSMutableArray *observers;
 
 @end
 
 @implementation GameViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void)viewWillLayoutSubviews {
 
-    // Configure the view.
+  [super viewWillLayoutSubviews];
+
+  [self setupObservers];
+
+  // Configure the view.
+  SKView *skView = (SKView *)self.view;
+
+  skView.showsFPS = YES;
+
+  skView.showsNodeCount = YES;
+
+  // Create and configure the scene.
+  LevelScene *scene = [[LevelScene alloc] initWithSize:skView.bounds.size level:self.currentLevel];
+
+  scene.scaleMode = SKSceneScaleModeAspectFill;
+
+  scene.sceneDelegate = self;
+
+  // Present the scene.
+  [skView presentScene:scene];
+
+}
+
+- (BOOL)shouldAutorotate {
+
+  return YES;
+
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+
+  return UIInterfaceOrientationMaskLandscape;
+
+}
+
+- (void)setupObservers {
+
+  self.observers = [NSMutableArray array];
+
+  id observer = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
     SKView *skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
-    skView.ignoresSiblingOrder = YES;
-    
-    // Create and configure the scene.
-    LevelScene *scene = [[LevelScene alloc] initWithSize:skView.bounds.size level:self.currentLevel];
-    scene.scaleMode = SKSceneScaleModeResizeFill;
 
-    // Present the scene.
-    [skView presentScene:scene];
+    skView.paused = YES;
+
+  }];
+
+  [self.observers addObject:observer];
+
+  observer = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillResignActiveNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+    SKView *skView = (SKView *)self.view;
+
+    skView.paused = YES;
+
+  }];
+
+  [self.observers addObject:observer];
+
+  observer = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+
+    SKView *skView = (SKView *)self.view;
+
+    skView.paused = NO;
+
+  }];
+
+  [self.observers addObject:observer];
 }
 
-- (BOOL)shouldAutorotate
-{
-    return YES;
+- (void)dealloc {
+
+  for (id observer in self.observers) {
+
+    [[NSNotificationCenter defaultCenter] removeObserver:observer];
+
+  }
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
-}
+- (void)dismissScene {
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
+  for (id observer in self.observers) {
 
-- (BOOL)prefersStatusBarHidden {
-    return YES;
+    [[NSNotificationCenter defaultCenter] removeObserver:observer];
+
+  }
+
+  self.observers = nil;
+
+  [self.navigationController popToRootViewControllerAnimated:YES];
+  
 }
 
 @end
-
 
 
 

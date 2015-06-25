@@ -11,6 +11,6 @@
 
 @interface GameViewController : UIViewController
 
-@property (nonatomic, assign) NSUInteger currentLevel;
+@property (nonatomic) NSUInteger currentLevel;
 
 @end

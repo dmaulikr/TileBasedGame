@@ -10,7 +10,7 @@
 
 @interface GameObject : SKSpriteNode
 
-@property (nonatomic, assign) BOOL flipX;
+@property (nonatomic) BOOL flipX;
 
 - (SKAction *)loadAnimationFromPlist:(NSString *)animationName forClass:(NSString *)className;
 

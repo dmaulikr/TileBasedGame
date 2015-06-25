@@ -24,14 +24,14 @@ typedef NS_ENUM(NSInteger, CharacterState) {
 
 @interface Character : GameObject
 
-@property (nonatomic, assign) CGPoint velocity;
-@property (nonatomic, assign) CGPoint desiredPosition;
-@property (nonatomic, assign) BOOL onGround;
-@property (nonatomic, assign) CharacterState characterState;
-@property (nonatomic, assign) BOOL onWall;
-@property (nonatomic, assign) BOOL isActive;
-@property (nonatomic, assign) NSInteger life;
-@property (nonatomic, strong) SKAction *dyingAnim;
+@property (nonatomic) CGPoint velocity;
+@property (nonatomic) CGPoint desiredPosition;
+@property (nonatomic) BOOL onGround;
+@property (nonatomic) CharacterState characterState;
+@property (nonatomic) BOOL onWall;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) NSInteger life;
+@property (nonatomic) SKAction *dyingAnim;
 
 - (void)update:(NSTimeInterval)dt;
 
