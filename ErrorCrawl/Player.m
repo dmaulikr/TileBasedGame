@@ -12,8 +12,8 @@
 #define kPlayerHeight 38
 
 #define kWalkingAcceleration 1600
-#define kDamping 0.85
-#define kMaxSpeed 250
+#define kDamping 0.89
+#define kMaxSpeed 500
 #define kJumpForce 400
 #define kJumpCutoff 150
 #define kJumpOut 360

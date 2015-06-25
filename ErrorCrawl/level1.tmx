@@ -1,41 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="500" height="40" tilewidth="32" tileheight="32" nextobjectid="27">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="500" height="40" tilewidth="32" tileheight="32" nextobjectid="250">
  <tileset firstgid="1" name="tileseta" tilewidth="32" tileheight="32">
   <image source="tileseta.png" width="160" height="160"/>
  </tileset>
  <layer name="walls" width="500" height="40">
   <data encoding="base64" compression="zlib">
-   eJztnItu6yAMhunOlFY62/u/7ll0Zs31bG4ht+b7JNQ2DSQF4x8DaUoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/5s/cNAAAAwGIee98AAAAALAY9B3gtbl/pLS2fextVDgBsA3oOAGg3wPlBzwH66NXA0dqJFgPADHoO0M5bkGZN1foaneflWwu5n95rLs0PAOszJfTcQqxzHWq1Nkp/v9LdpLk/Ter94/v99J3Hvo7UR+J+gP94Y9BXt2P0/AcbU+HLXg9Pk0WHZ23++Eqf6bdG55Lk+1D55fVhzrOvkynr7NwS/QbGU9LlJfZmdT8q5wx2fTU9P0ObwDKspkT6XavjtTo/Ofei9dzjr3N/I2OJXD2Uzq8p0zvOmBiWUrKXPeLuM9jylfRct0dP25yhPeEn5m3RaR1f53RczrFxdUnPczYzBeWdiWjcQF+BV+EM/v9Kem7Zo33OYBNb4cWkrUSxeKTb+n2E1XEvj143z7WpXjvPXW9JnL50jjuX185FAowi2mN51PHgGXz3lfW8xOj2s5rglX8GmxmB/E5Nj757cW2kwS3U5r+l37qumfvWn+/y1sDOOR3Zfo7qp+Ha5MYV0fMpR7Vf9HwcS31pbpx6JWp/s67vERrew/R9Hyk9jyfk3vT+9lIs0hKr5HyQ/n6tvT0lH5i73tF9IozjCM852nvw9r+JD7mb7+U7ne+e9rPfW/o9xtD3i54/s3Rdfeka/RqIDczo+6nd1zmSGt2qXT/21sn3QNa/Bb3PPWXeHxHP/3rzDqU8JXvyxjd79xPN0ec6rkLL/kxP327Bq7a5yH6j59308yxbI/GDjmPED+oYAuq4OZ9ze5dr5thtWVpve7G26PlPTzfX/k+TufzP79eP5O9Ds/vHSusSe+8h08+gHVW7j6xNR9L2V1wDa51LOUq5Nu6wcbI9bmPrnD5L3/Q+6/Pss6g67YHeO6v35tzN8auxxPZ6dMPaqHdd2x52D5WdB8qh894z77193DLH1IueD9DHbNxqkf4402KTR94PPlLTz64rteyl6XP9lvZJvnrd74HnG61eS//29qB6Ou79F0SNRn8E52w5Lte/zRtXoufP1IwnS8/YltYINVovdV3bdZgpPT8blfNp1qY/1XuZG/X2VJf2i+njuTnxUuqxKbsPHN/5H71ut0a5uVRzfu459F5t3jpWn+859wyCMMJXeuPdlry1fXCta4xsj2h9stXW7fqIfb605vmWLTXc208SzTnK9+/pt26j52X0/iZtu9Feaqvj0bPLM15de23o2dNkruGh13L1/abUt85s80Rl2D7fs2fE6vlV7DLnJ9fS8ug6RyLaQ7iGvstYusTSGF2vce41D7El0ZziVeaaNJ5eRxou6T396Lj+nwsv76TybDEWOwP6+SM91pHxu1fnuWR1/ZGe9VDHwrpN9f28qbJsfo/JvN/y+a0ZqUMZ59bakN4voOfXRtngnv830NOv7H7a3j5aG9MdFS9WGdGOOqZr6Rc940xte/qZB/EJNWO6s/hlfb9H2T+yN55uW532tNx7r+Px+fijkNfrPy0++ej2FmG1XPc1qT8v7o7+h0xjz5HrvaXnurZ7QLSG1uz9yv0n2lbYZyZq/V80XtL+bkmSMe1aNqrL1qlmHteWo+1C2m6rOdAj0+uXND0arpH//intM7E+XHyv1nPtj0Xr12a0/Vub12vWV6Ym9rbv35Mfk3v6XKPnttyW/rPH80/ePbSu5+XWcHRdid7M5OJVq59eW3o+W2u6p8G23SLNakmj18JqY0qvPWrHHFL3+jfbY/bzW/L7l7dXtgc9X92q37aMUpvV1OURGX3PPXlLe95akLl3+1tyftzqufYxj7Ru+0V7yI5qL0egVEc1+6xKWpvT8dx3Vs+jvNHYodVHt/jyUn3W5M/t/9axn+5zXkweJa3nEa16Gvlr2+f0c4dRPm+cVvu7erD1Hf0PeY8+rUmur0Vjv+h4ZIO169G63CX2srWuR3VVk0q/oWfvnLRlyZf02nqExNPSj3JjVfGjUXxudX1UO5bixBpdt339iGOAFq3I5bflROVqf2zP8bTz3Un39FurvVg9t47u6bkt37vOGqlU5yV96PUjdk9gi+8RvH4wsl50//P+L9zm6dVzb69lzo4lTc61e/S8tV1b+1vUpp6fa7l/b77EluP1+VwbrtmvRqRaDS9pSO29e/FvzlfX9OWR9SE24M2tRzZm7cbqufXLI9aboue6dN1YP+Cd21N/NTbTOzb0bETXra7LyM9FdmLzl457GqqPe3Porcf1a26+PZe20PWSL9rS15Xy5+atRt+nNze8VTss0bYt7OKe/DarbVM7vl2Sor2mZ0itvrS1zUb3i9rreL5VPuf8WYsPj/p+bRmt9xHFctE5S3TyzVwjN587J7tvx/orL16M5qfsfEBJw+130X1HcXRtm/S2S24+vbZda+3lH0BLOTI=
+   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
   </data>
  </layer>
  <objectgroup name="objects">
-  <object id="1" name="exit" type="exit" x="15882" y="767" width="80" height="115"/>
+  <object id="1" name="exit" type="exit" x="15715.9" y="759.277" width="161.638" height="115"/>
   <object id="2" name="player" type="player" x="115" y="1035" width="15" height="18"/>
  </objectgroup>
  <objectgroup name="enemies">
-  <object id="3" name="Crawler" type="Crawler" x="3560" y="1120" width="32" height="25"/>
-  <object id="4" name="Crawler" type="Crawler" x="5026" y="1111" width="32" height="25"/>
-  <object id="5" name="Crawler" type="Crawler" x="5756" y="1079" width="32" height="25"/>
-  <object id="6" name="Crawler" type="Crawler" x="6502" y="1143" width="32" height="25"/>
-  <object id="7" name="Crawler" type="Crawler" x="6452" y="667" width="32" height="25"/>
-  <object id="8" name="Crawler" type="Crawler" x="6894" y="631" width="32" height="25"/>
-  <object id="9" name="Crawler" type="Crawler" x="7000" y="1175" width="32" height="25"/>
-  <object id="10" name="Crawler" type="Crawler" x="7044" y="859" width="32" height="25"/>
-  <object id="11" name="Crawler" type="Crawler" x="8000" y="733" width="32" height="25"/>
-  <object id="12" name="Crawler" type="Crawler" x="8568" y="635" width="32" height="25"/>
-  <object id="13" name="Crawler" type="Crawler" x="8717" y="860" width="32" height="25"/>
-  <object id="14" name="Crawler" type="Crawler" x="9320" y="1140" width="32" height="25"/>
-  <object id="15" name="Crawler" type="Crawler" x="9932" y="1172" width="32" height="25"/>
-  <object id="16" name="Crawler" type="Crawler" x="11060" y="1045" width="32" height="25"/>
-  <object id="17" name="Crawler" type="Crawler" x="10149" y="1166" width="32" height="25"/>
-  <object id="18" name="Crawler" type="Crawler" x="11476" y="1151" width="32" height="25"/>
-  <object id="19" name="Crawler" type="Crawler" x="12408" y="1163" width="32" height="25"/>
-  <object id="20" name="Crawler" type="Crawler" x="13278" y="1179" width="32" height="25"/>
-  <object id="21" name="Crawler" type="Crawler" x="13722" y="921" width="32" height="25"/>
-  <object id="22" name="Crawler" type="Crawler" x="14221" y="860" width="32" height="25"/>
-  <object id="23" name="Crawler" type="Crawler" x="14305" y="1183" width="32" height="25"/>
-  <object id="24" name="Crawler" type="Crawler" x="14945" y="1145" width="32" height="25"/>
-  <object id="25" name="Crawler" type="Crawler" x="15344" y="985" width="32" height="25"/>
+  <object id="107" name="Crawler" type="Crawler" x="14733.2" y="968.495" width="32" height="25"/>
+  <object id="108" name="Crawler" type="Crawler" x="926.761" y="1151.52" width="32" height="25"/>
+  <object id="109" name="Crawler" type="Crawler" x="1451.05" y="1127.47" width="32" height="25"/>
+  <object id="110" name="Crawler" type="Crawler" x="820.941" y="752.291" width="32" height="25"/>
+  <object id="111" name="Crawler" type="Crawler" x="974.861" y="742.671" width="32" height="25"/>
+  <object id="112" name="Crawler" type="Crawler" x="1402.95" y="353.06" width="32" height="25"/>
+  <object id="113" name="Crawler" type="Crawler" x="1297.13" y="526.221" width="32" height="25"/>
+  <object id="114" name="Crawler" type="Crawler" x="1489.53" y="338.63" width="32" height="25"/>
+  <object id="115" name="Crawler" type="Crawler" x="1667.5" y="1161.14" width="32" height="25"/>
+  <object id="116" name="Crawler" type="Crawler" x="594.871" y="1146.71" width="32" height="25"/>
+  <object id="117" name="Crawler" type="Crawler" x="1417.38" y="920.641" width="32" height="25"/>
+  <object id="118" name="Crawler" type="Crawler" x="1542.44" y="665.711" width="32" height="25"/>
+  <object id="119" name="Crawler" type="Crawler" x="1806.99" y="891.781" width="32" height="25"/>
+  <object id="120" name="Crawler" type="Crawler" x="1970.53" y="622.421" width="32" height="25"/>
+  <object id="121" name="Crawler" type="Crawler" x="2105.21" y="603.181" width="32" height="25"/>
+  <object id="122" name="Crawler" type="Crawler" x="2143.69" y="381.92" width="32" height="25"/>
+  <object id="123" name="Crawler" type="Crawler" x="2538.11" y="175.09" width="32" height="25"/>
+  <object id="124" name="Crawler" type="Crawler" x="2720.89" y="146.23" width="32" height="25"/>
+  <object id="125" name="Crawler" type="Crawler" x="2427.48" y="785.961" width="32" height="25"/>
+  <object id="126" name="Crawler" type="Crawler" x="2764.18" y="728.241" width="32" height="25"/>
+  <object id="127" name="Crawler" type="Crawler" x="2071.54" y="1165.95" width="32" height="25"/>
+  <object id="128" name="Crawler" type="Crawler" x="2326.47" y="1146.71" width="32" height="25"/>
+  <object id="129" name="Crawler" type="Crawler" x="2571.78" y="1151.52" width="32" height="25"/>
+  <object id="130" name="Crawler" type="Crawler" x="3081.64" y="795.581" width="32" height="25"/>
+  <object id="131" name="Crawler" type="Crawler" x="3124.93" y="405.97" width="32" height="25"/>
+  <object id="132" name="Crawler" type="Crawler" x="2845.95" y="468.5" width="32" height="25"/>
+  <object id="133" name="Crawler" type="Crawler" x="3528.97" y="151.04" width="32" height="25"/>
+  <object id="134" name="Crawler" type="Crawler" x="4211.99" y="50.0301" width="32" height="25"/>
+  <object id="135" name="Crawler" type="Crawler" x="4144.65" y="314.58" width="32" height="25"/>
+  <object id="136" name="Crawler" type="Crawler" x="4005.16" y="343.44" width="32" height="25"/>
+  <object id="137" name="Crawler" type="Crawler" x="3807.95" y="478.12" width="32" height="25"/>
+  <object id="138" name="Crawler" type="Crawler" x="3519.35" y="718.621" width="32" height="25"/>
+  <object id="139" name="Crawler" type="Crawler" x="3735.8" y="862.921" width="32" height="25"/>
+  <object id="140" name="Crawler" type="Crawler" x="3625.17" y="1151.52" width="32" height="25"/>
+  <object id="141" name="Crawler" type="Crawler" x="3288.47" y="1141.9" width="32" height="25"/>
+  <object id="142" name="Crawler" type="Crawler" x="3047.97" y="1141.9" width="32" height="25"/>
+  <object id="143" name="Crawler" type="Crawler" x="4096.55" y="1156.33" width="32" height="25"/>
+  <object id="144" name="Crawler" type="Crawler" x="3865.67" y="1117.85" width="32" height="25"/>
+  <object id="145" name="Crawler" type="Crawler" x="4096.55" y="747.481" width="32" height="25"/>
+  <object id="146" name="Crawler" type="Crawler" x="4365.91" y="627.231" width="32" height="25"/>
+  <object id="147" name="Crawler" type="Crawler" x="4577.55" y="165.47" width="32" height="25"/>
+  <object id="148" name="Crawler" type="Crawler" x="4741.09" y="155.85" width="32" height="25"/>
+  <object id="149" name="Crawler" type="Crawler" x="5077.8" y="285.72" width="32" height="25"/>
+  <object id="150" name="Crawler" type="Crawler" x="5270.2" y="290.53" width="32" height="25"/>
+  <object id="151" name="Crawler" type="Crawler" x="5655" y="69.2701" width="32" height="25"/>
+  <object id="152" name="Crawler" type="Crawler" x="5857.02" y="60.8611" width="32" height="25"/>
+  <object id="153" name="Crawler" type="Crawler" x="5890.69" y="280.91" width="32" height="25"/>
+  <object id="154" name="Crawler" type="Crawler" x="6059.04" y="314.58" width="32" height="25"/>
+  <object id="155" name="Crawler" type="Crawler" x="5606.9" y="487.741" width="32" height="25"/>
+  <object id="156" name="Crawler" type="Crawler" x="5443.36" y="915.831" width="32" height="25"/>
+  <object id="157" name="Crawler" type="Crawler" x="4943.11" y="824.441" width="32" height="25"/>
+  <object id="158" name="Crawler" type="Crawler" x="5246.15" y="675.331" width="32" height="25"/>
+  <object id="159" name="Crawler" type="Crawler" x="5847.4" y="781.151" width="32" height="25"/>
+  <object id="160" name="Crawler" type="Crawler" x="6338.02" y="949.501" width="32" height="25"/>
+  <object id="161" name="Crawler" type="Crawler" x="6419.79" y="439.64" width="32" height="25"/>
+  <object id="162" name="Crawler" type="Crawler" x="6597.76" y="675.331" width="32" height="25"/>
+  <object id="163" name="Crawler" type="Crawler" x="6500.08" y="70.4924" width="32" height="25"/>
+  <object id="164" name="Crawler" type="Crawler" x="6686.24" y="77.2174" width="32" height="25"/>
+  <object id="165" name="Crawler" type="Crawler" x="7261.54" y="151.04" width="32" height="25"/>
+  <object id="166" name="Crawler" type="Crawler" x="7136.48" y="151.04" width="32" height="25"/>
+  <object id="167" name="Crawler" type="Crawler" x="7256.73" y="526.221" width="32" height="25"/>
+  <object id="168" name="Crawler" type="Crawler" x="7251.92" y="886.971" width="32" height="25"/>
+  <object id="169" name="Crawler" type="Crawler" x="6684.34" y="1127.47" width="32" height="25"/>
+  <object id="170" name="Crawler" type="Crawler" x="6439.03" y="1156.33" width="32" height="25"/>
+  <object id="171" name="Crawler" type="Crawler" x="5813.73" y="1127.47" width="32" height="25"/>
+  <object id="172" name="Crawler" type="Crawler" x="5424.12" y="1161.14" width="32" height="25"/>
+  <object id="173" name="Crawler" type="Crawler" x="4851.72" y="1108.23" width="32" height="25"/>
+  <object id="174" name="Crawler" type="Crawler" x="4620.84" y="1151.52" width="32" height="25"/>
+  <object id="175" name="Crawler" type="Crawler" x="5630.95" y="1137.09" width="32" height="25"/>
+  <object id="176" name="Crawler" type="Crawler" x="7146.1" y="1146.71" width="32" height="25"/>
+  <object id="177" name="Crawler" type="Crawler" x="7742.54" y="1170.76" width="32" height="25"/>
+  <object id="178" name="Crawler" type="Crawler" x="7497.23" y="1113.04" width="32" height="25"/>
+  <object id="179" name="Crawler" type="Crawler" x="7612.67" y="747.481" width="32" height="25"/>
+  <object id="180" name="Crawler" type="Crawler" x="7684.82" y="463.69" width="32" height="25"/>
+  <object id="181" name="Crawler" type="Crawler" x="7848.36" y="434.83" width="32" height="25"/>
+  <object id="182" name="Crawler" type="Crawler" x="8002.28" y="247.24" width="32" height="25"/>
+  <object id="183" name="Crawler" type="Crawler" x="8271.64" y="102.94" width="32" height="25"/>
+  <object id="184" name="Crawler" type="Crawler" x="8651.63" y="93.3201" width="32" height="25"/>
+  <object id="185" name="Crawler" type="Crawler" x="8916.18" y="74.0801" width="32" height="25"/>
+  <object id="186" name="Crawler" type="Crawler" x="8478.47" y="391.54" width="32" height="25"/>
+  <object id="187" name="Crawler" type="Crawler" x="8257.21" y="636.851" width="32" height="25"/>
+  <object id="188" name="Crawler" type="Crawler" x="8108.1" y="622.421" width="32" height="25"/>
+  <object id="189" name="Crawler" type="Crawler" x="8560.24" y="914.676" width="32" height="25"/>
+  <object id="190" name="Crawler" type="Crawler" x="9017.19" y="598.371" width="32" height="25"/>
+  <object id="191" name="Crawler" type="Crawler" x="9175.92" y="314.58" width="32" height="25"/>
+  <object id="192" name="Crawler" type="Crawler" x="9416.42" y="689.761" width="32" height="25"/>
+  <object id="193" name="Crawler" type="Crawler" x="8714.16" y="1146.71" width="32" height="25"/>
+  <object id="194" name="Crawler" type="Crawler" x="8488.09" y="1151.52" width="32" height="25"/>
+  <object id="195" name="Crawler" type="Crawler" x="8175.44" y="1151.52" width="32" height="25"/>
+  <object id="196" name="Crawler" type="Crawler" x="9243.26" y="1132.28" width="32" height="25"/>
+  <object id="197" name="Crawler" type="Crawler" x="9647.3" y="1122.66" width="32" height="25"/>
+  <object id="198" name="Crawler" type="Crawler" x="9825.27" y="1141.9" width="32" height="25"/>
+  <object id="199" name="Crawler" type="Crawler" x="9762.74" y="930.261" width="32" height="25"/>
+  <object id="200" name="Crawler" type="Crawler" x="10089.8" y="723.431" width="32" height="25"/>
+  <object id="201" name="Crawler" type="Crawler" x="9320.22" y="886.971" width="32" height="25"/>
+  <object id="202" name="Crawler" type="Crawler" x="9873.37" y="502.171" width="32" height="25"/>
+  <object id="203" name="Crawler" type="Crawler" x="9926.28" y="117.37" width="32" height="25"/>
+  <object id="204" name="Crawler" type="Crawler" x="10623.7" y="314.58" width="32" height="25"/>
+  <object id="205" name="Crawler" type="Crawler" x="10835.4" y="98.1301" width="32" height="25"/>
+  <object id="206" name="Crawler" type="Crawler" x="10585.3" y="718.621" width="32" height="25"/>
+  <object id="207" name="Crawler" type="Crawler" x="10205.3" y="1127.47" width="32" height="25"/>
+  <object id="208" name="Crawler" type="Crawler" x="10479.4" y="1127.47" width="32" height="25"/>
+  <object id="209" name="Crawler" type="Crawler" x="10873.9" y="1141.9" width="32" height="25"/>
+  <object id="210" name="Crawler" type="Crawler" x="10989.3" y="790.771" width="32" height="25"/>
+  <object id="211" name="Crawler" type="Crawler" x="11071.1" y="463.69" width="32" height="25"/>
+  <object id="212" name="Crawler" type="Crawler" x="11479.9" y="381.92" width="32" height="25"/>
+  <object id="213" name="Crawler" type="Crawler" x="11706" y="88.5101" width="32" height="25"/>
+  <object id="214" name="Crawler" type="Crawler" x="11378.9" y="627.231" width="32" height="25"/>
+  <object id="215" name="Crawler" type="Crawler" x="11412.6" y="891.781" width="32" height="25"/>
+  <object id="216" name="Crawler" type="Crawler" x="12182.2" y="276.1" width="32" height="25"/>
+  <object id="217" name="Crawler" type="Crawler" x="11980.2" y="920.641" width="32" height="25"/>
+  <object id="218" name="Crawler" type="Crawler" x="11388.5" y="1156.33" width="32" height="25"/>
+  <object id="219" name="Crawler" type="Crawler" x="11802.2" y="1132.28" width="32" height="25"/>
+  <object id="220" name="Crawler" type="Crawler" x="11989.8" y="1165.95" width="32" height="25"/>
+  <object id="221" name="Crawler" type="Crawler" x="12345.7" y="867.731" width="32" height="25"/>
+  <object id="222" name="Crawler" type="Crawler" x="12446.7" y="434.83" width="32" height="25"/>
+  <object id="223" name="Crawler" type="Crawler" x="13115.3" y="199.14" width="32" height="25"/>
+  <object id="224" name="Crawler" type="Crawler" x="13322.1" y="526.221" width="32" height="25"/>
+  <object id="225" name="Crawler" type="Crawler" x="12610.3" y="973.551" width="32" height="25"/>
+  <object id="226" name="Crawler" type="Crawler" x="12393.8" y="1141.9" width="32" height="25"/>
+  <object id="227" name="Crawler" type="Crawler" x="12908.5" y="1190" width="32" height="25"/>
+  <object id="228" name="Crawler" type="Crawler" x="12754.6" y="1127.47" width="32" height="25"/>
+  <object id="229" name="Crawler" type="Crawler" x="13115.3" y="1122.66" width="32" height="25"/>
+  <object id="230" name="Crawler" type="Crawler" x="13658.8" y="1137.09" width="32" height="25"/>
+  <object id="231" name="Crawler" type="Crawler" x="14058.1" y="1141.9" width="32" height="25"/>
+  <object id="232" name="Crawler" type="Crawler" x="13812.8" y="1137.09" width="32" height="25"/>
+  <object id="233" name="Crawler" type="Crawler" x="14289" y="1122.66" width="32" height="25"/>
+  <object id="234" name="Crawler" type="Crawler" x="14326.6" y="388.352" width="32" height="25"/>
+  <object id="235" name="Crawler" type="Crawler" x="14115.8" y="151.04" width="32" height="25"/>
+  <object id="236" name="Crawler" type="Crawler" x="14082.1" y="641.661" width="32" height="25"/>
+  <object id="237" name="Crawler" type="Crawler" x="13731" y="670.521" width="32" height="25"/>
+  <object id="238" name="Crawler" type="Crawler" x="14611.2" y="588.751" width="32" height="25"/>
+  <object id="239" name="Crawler" type="Crawler" x="14928.7" y="141.42" width="32" height="25"/>
+  <object id="240" name="Crawler" type="Crawler" x="15089.3" y="453.864" width="32" height="25"/>
+  <object id="241" name="Crawler" type="Crawler" x="15241.3" y="362.302" width="32" height="25"/>
+  <object id="242" name="Crawler" type="Crawler" x="15462.6" y="805.201" width="32" height="25"/>
+  <object id="243" name="Crawler" type="Crawler" x="15212.5" y="1108.23" width="32" height="25"/>
+  <object id="244" name="Crawler" type="Crawler" x="14947.9" y="1180.38" width="32" height="25"/>
+  <object id="245" name="Crawler" type="Crawler" x="14592" y="1161.14" width="32" height="25"/>
+  <object id="246" name="Crawler" type="Crawler" x="15659.8" y="949.501" width="32" height="25"/>
+  <object id="247" name="Crawler" type="Crawler" x="13222.1" y="190.242" width="32" height="25"/>
+  <object id="248" name="Crawler" type="Crawler" x="14036.9" y="211.481" width="32" height="25"/>
  </objectgroup>
  <objectgroup name="powerups">
   <object id="26" name="DoubleJump" type="DoubleJump" x="14523" y="837"/>
