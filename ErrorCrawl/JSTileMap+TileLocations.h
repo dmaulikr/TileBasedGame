@@ -8,9 +8,13 @@
 #import "JSTileMap.h"
 
 @interface JSTileMap (TileLocations)
+
 - (CGRect)tileRectFromTileCoords:(CGPoint)tileCoords;
+
 @end
 
 @interface TMXLayer (TileLocations)
+
 - (NSInteger)tileGIDAtTileCoord:(CGPoint)point;
+
 @end
