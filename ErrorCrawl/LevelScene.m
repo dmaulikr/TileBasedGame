@@ -179,7 +179,7 @@ typedef NS_ENUM(NSInteger, GameState) {
 
       backgroundSprite.anchorPoint = CGPointMake(0.0, 0.0);
 
-      [parallaxNode addChild:backgroundSprite z:-1 parallaxRatio:CGPointMake(0.066, 0.6) positionOffset:CGPointMake(0 * 1024, 30)];
+      [parallaxNode addChild:backgroundSprite z:-1 parallaxRatio:CGPointMake(0.066, 0.6) positionOffset:CGPointMake(0 * 1024, 40)];
 
 //    }
 //  }
@@ -269,6 +269,12 @@ typedef NS_ENUM(NSInteger, GameState) {
 
   character.onWall = NO;
 
+  if (self.player.desiredPosition.y > (self.map.mapSize.height - 100)) {
+
+
+
+  }
+
   NSInteger indices[8] = {7, 1, 3, 5, 0, 2, 6, 8};
 
   for (NSUInteger i = 0; i < 8; i++) {
@@ -278,11 +284,6 @@ typedef NS_ENUM(NSInteger, GameState) {
     CGRect characterRect = [character collisionBoundingBox];
 
     CGPoint characterCoord = [self.walls coordForPoint:character.position];
-
-//    if (characterCoord.x >= self.map.mapSize.width + 20 || characterCoord.x < self.map.mapSize.width - 20) {
-//
-//
-//    }
 
     NSInteger tileColumn = tileIndex % 3;
 
@@ -451,34 +452,37 @@ typedef NS_ENUM(NSInteger, GameState) {
 
     if (self.gameState == kGameStateWon) {
 
-      SKLabelNode *win = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
+      SKLabelNode *won = [SKLabelNode labelNodeWithFontNamed:@"Helvetica Neue Thin"];
 
-      win.text = @"You Win";
+      won.text = @"You Win";
 
-      win.position = CGPointMake(self.size.width / 2.0, self.size.height / 2.0);
+      won.fontColor = [UIColor whiteColor];
 
-      win.fontSize = 60.0;
+      won.position = CGPointMake(self.size.width / 2.0, self.size.height / 2.0);
 
-      [self addChild:win];
+      won.fontSize = 90.0;
+
+      [self addChild:won];
 
       [self performSelector:@selector(restart) withObject:nil afterDelay:3.0];
 
     } else {
 
-      SKLabelNode *lose = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
+      SKLabelNode *lost = [SKLabelNode labelNodeWithFontNamed:@"Helvetica Neue Thin"];
 
-      lose.text = @"You Lose";
+      lost.text = @"You Lose";
 
-      lose.position = CGPointMake(self.size.width / 2.0, self.size.height / 2.0);
+      lost.position = CGPointMake(self.size.width / 2.0, self.size.height / 2.0);
 
-      lose.fontSize = 60.0;
+      lost.fontColor = [UIColor whiteColor];
 
-      [self addChild:lose];
+      lost.fontSize = 90.0;
+
+      [self addChild:lost];
 
       [self performSelector:@selector(restart) withObject:nil afterDelay:3.0];
 
     }
-
   }
 }
 

@@ -43,7 +43,7 @@
 
     self.jumpReset = YES;
 
-    self.life = 100;
+    self.life = 500;
 
   }
 

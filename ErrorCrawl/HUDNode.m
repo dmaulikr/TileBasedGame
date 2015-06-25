@@ -44,11 +44,11 @@
 
     [self addChild:self.lifeBar];
 
-    SKAction *scaleUpAction = [SKAction scaleTo:1.2 duration:0.13];
+    SKAction *scaleUpAction = [SKAction scaleTo:1.2 duration:0.09];
 
-    SKAction *scaleDownAction = [SKAction scaleTo:0.98 duration:0.13];
+    SKAction *scaleDownAction = [SKAction scaleTo:0.97 duration:0.09];
 
-    SKAction *wait = [SKAction waitForDuration: 0.5];
+    SKAction *wait = [SKAction waitForDuration: 0.4];
 
     SKAction *pulse = [SKAction sequence:@[scaleUpAction, scaleDownAction, wait, scaleUpAction, scaleDownAction]];
 
@@ -66,7 +66,7 @@
 
     self.leftButton = [SKSpriteNode spriteNodeWithImageNamed:@"leftButton"];
 
-    self.leftButton.position = CGPointMake(50, 60);
+    self.leftButton.position = CGPointMake(60, 95);
 
     self.leftButton.color = [SKColor colorWithRed:62.0/255.0 green:62.0/255.0 blue:62.0/255.0 alpha:1.0];
 
@@ -78,7 +78,7 @@
 
     self.rightButton = [SKSpriteNode spriteNodeWithImageNamed:@"rightButton"];
 
-    self.rightButton.position = CGPointMake(150, 60);
+    self.rightButton.position = CGPointMake(140, 50);
 
     self.rightButton.color = [SKColor colorWithRed:62.0/255.0 green:62.0/255.0 blue:62.0/255.0 alpha:1.0];
 
